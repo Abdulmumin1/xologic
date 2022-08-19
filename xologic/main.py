@@ -9,13 +9,15 @@ class Logic():
         self.board = self.default[:]
         
 
-    def logic(self, board=self.board) -> list:
+    def logic(self, board=None) -> list:
         """
         returns the winner 
         and a list of the indexes where the win was found!
 
         example (x, [0,1,2,3])
         """
+        if not board:
+            board = self.board
         horizontal = self.horizontal(board)
         # print(<'horizontal checked')
         vertical = self.vertical(board)
