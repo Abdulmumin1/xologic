@@ -64,7 +64,7 @@ class Logic():
         
         number_indexes = [i for i in range(0, self.board_size**2, self.board_size+1)]
         pos = map(lambda x:board[x], number_indexes)
-        print(number_indexes)
+        # print(number_indexes)
         if self.hole(pos, board[0]):
             return board[0], number_indexes
         return False
