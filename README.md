@@ -2,6 +2,12 @@
 
 a tic tac toe game logic to check the win on a game board!
 
+## Installation
+
+```bash
+pip install xologic
+```
+
 ## Usage
 
 ```python
